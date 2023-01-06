@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Oregano';
+}
+
+.App {
+  background-color: #000;
+}
+
+@media (min-width:1025px) {
+  .compra {
+    background-color: #664300;
+    box-shadow: 0 0 0 3px #B28405;
+    border: none;
+    border-radius: 10px;
+    font-size: 2.5rem;
+    text-decoration: none;
+    padding: 4px 12px;
+    color: #000;
+    cursor: pointer;
+  }
+
+  .compra:hover {
+    color: #fff;
+  }
+
+  .com {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sho {
+    padding: 10px 100px;
+    font-size: 1.6rem;
+  }
+
+  .eli {
+    width: 60%;
+  }
+}
+
+//Mobile
+@media (min-width: 320px) and (max-width: 480px) and (orientation:portrait) {
+  .compra {
+    background-color: #664300;
+    box-shadow: 0 0 0 3px #B28405;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 4px 12px;
+    color: #000;
+    cursor: pointer;
+  }
+
+  .com {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .compra:hover {
+    color: #fff;
+  }
+}
+
+//Mobile horizontal
+@media (min-width:399px) and (max-width:760px) and (orientation:landscape) {
+  .compra {
+    background-color: #664300;
+    box-shadow: 0 0 0 3px #B28405;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.7rem;
+    text-decoration: none;
+    padding: 4px 12px;
+    color: #000;
+    cursor: pointer;
+  }
+
+  .com {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .compra:hover {
+    color: #fff;
+  }
+
+}
+
+//Tablet
+@media (min-width:481px) and (max-width:768px) and (orientation:portrait) {
+  .compra {
+    background-color: #664300;
+    box-shadow: 0 0 0 3px #B28405;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.9rem;
+    text-decoration: none;
+    padding: 4px 12px;
+    color: #000;
+    cursor: pointer;
+  }
+
+  .com {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .compra:hover {
+    color: #fff;
+  }
+
+}
+
+//Tablet horizontal
+@media (min-width:761px) and (max-width:1024px) and (orientation:landscape) {
+  .compra {
+    background-color: #664300;
+    box-shadow: 0 0 0 3px #B28405;
+    border: none;
+    border-radius: 10px;
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 4px 12px;
+    color: #000;
+    cursor: pointer;
+  }
+
+  .com {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .compra:hover {
+    color: #fff;
+  }
+}

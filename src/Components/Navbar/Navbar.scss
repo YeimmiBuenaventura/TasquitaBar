@@ -1,0 +1,98 @@
+@media (min-width:1025px) {
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        padding: 50px 100px;
+    }
+
+    .nav1 {
+        background-color: #A07704;
+        border-radius: 10px;
+        border-color: #664300;
+        border-width: 4px;
+        font-size: 2.5rem;
+        padding: 4px 12px;
+    }
+
+    .nav1:hover {
+        color: #fff;
+        cursor: pointer;
+    }
+}
+
+//Mobile
+@media (min-width: 320px) and (max-width:480px) and (orientation:portrait) {
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px 20px;
+    }
+
+    .nav1 {
+        background-color: #A07704;
+        border-radius: 8px;
+        border-color: #664300;
+        border-width: 3px;
+        font-size: 1.4rem;
+        padding: 1px 8px;
+    }
+
+}
+
+//Mobile horizontal
+@media (min-width:399px) and (max-width: 760px) and (orientation:landscape) {
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px 30px;
+    }
+
+    .nav1 {
+        background-color: #A07704;
+        border-radius: 10px;
+        border-color: #664300;
+        border-width: 4px;
+        font-size: 1.9rem;
+        padding: 3px 12px;
+    }
+
+
+}
+
+//Ipads - Tablets
+@media (min-width: 481px) and (max-width: 768px) and (orientation:portrait) {
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px 30px;
+    }
+
+    .nav1 {
+        background-color: #A07704;
+        border-radius: 10px;
+        border-color: #664300;
+        border-width: 4px;
+        font-size: 2rem;
+        padding: 4px 12px;
+    }
+
+}
+
+//Tablet horizontal
+@media (min-width: 761px) and (max-width: 1024px) and (orientation:landscape) {
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px 100px;
+    }
+
+    .nav1 {
+        background-color: #A07704;
+        border-radius: 10px;
+        border-color: #664300;
+        border-width: 4px;
+        font-size: 2.5rem;
+        padding: 4px 12px;
+    }
+
+}

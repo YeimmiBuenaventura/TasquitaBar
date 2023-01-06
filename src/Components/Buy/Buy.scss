@@ -1,0 +1,555 @@
+@media (min-width:1025px) {
+    .msg {
+        text-align: center;
+        padding: 20px;
+        color: #000;
+        font-size: 2.3rem;
+    }
+
+    .type {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-template-columns: repeat(auto-fit minmax(80px, 1fr));
+        grid-template-columns: repeat(auto-fill minmax(80px, 1fr));
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(auto-fill minmax(60px, 1fr));
+        grid-template-rows: repeat(auto-fit minmax(60px, 1fr));
+        padding: 50px 160px;
+        row-gap: 20px;
+        font-size: 2.1rem;
+    }
+
+    .efectivo {
+        grid-area: 1 / 1 / 2 / 2;
+        width: 50%;
+        display:flex;
+        justify-self: center;
+    }
+
+    .efec {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .nequi {
+        grid-area: 1 / 2 / 2 / 3;
+        width: 50%;
+        display:flex;
+        justify-self: center;
+    }
+
+    .neq {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+
+    .tarjetas {
+        grid-area: 1 / 3 / 2 / 4;
+        width: 50%;
+        display:flex;
+        justify-self: center;
+    }
+
+    .tarj {
+        grid-area: 2 / 3 / 3 / 4;
+    }
+
+    .daviplata {
+        grid-area: 1 / 4 / 2 / 5;
+        width: 50%
+    }
+
+    .davi {
+        grid-area: 2 / 4 / 3 / 5;
+        padding-left: 20px;
+    }
+
+    form {
+        padding: 20px 200px;
+        font-size: 2.3rem;
+    }
+
+    #name,
+    #cel,
+    #ad {
+        box-shadow: 0 0 3px 1px #664300;
+        background-color: transparent;
+        border: none;
+        padding: 4px 70px;
+        font-size: 2.3rem;
+        border-radius: 5px;
+    }
+
+    #coment {
+        box-shadow: 0 0 3px 1px #664300;
+        background-color: transparent;
+        border: none;
+        font-size: 1.3rem;
+        padding: 20px 20px;
+        width: 80%;
+    }
+    .conboton{
+        display: flex;
+        justify-content: center;
+        padding: 50px 0;
+    }
+    .confirmar {
+        background-color: #664300;
+        box-shadow: 0 0 0 3px #B28405;
+        border: none;
+        border-radius: 10px;
+        font-size: 2.2rem;
+        padding: 4px 15px;
+    }
+
+    .confirmar:hover {
+        color: #fff;
+        cursor: pointer;
+    }
+}
+//Mobile
+@media (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
+    .msg {
+        text-align: center;
+        padding: 20px;
+        color: #000;
+        font-size: 1.5rem;
+    }
+
+    .type {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-template-columns: repeat(auto-fit minmax(80px, 1fr));
+        grid-template-columns: repeat(auto-fill minmax(80px, 1fr));
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(auto-fill minmax(60px, 1fr));
+        grid-template-rows: repeat(auto-fit minmax(60px, 1fr));
+        padding: 10px;
+        column-gap: 20px;
+        row-gap: 5px;
+        font-size: 1.2rem;
+    }
+
+    .efectivo {
+        grid-area: 1 / 1 / 2 / 2;
+        width: 70%;
+        display:flex;
+        justify-self: center;
+
+    }
+
+    .efec {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .nequi {
+        grid-area: 1 / 2 / 2 / 3;
+        width: 70%;
+        display:flex;
+        justify-self: center;
+    }
+
+    .neq {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+
+    .tarjetas {
+        grid-area: 1 / 3 / 2 / 4;
+        width: 70%;
+        display:flex;
+        justify-self: center;
+    }
+
+    .tarj {
+        grid-area: 2 / 3 / 3 / 4;
+    }
+
+    .daviplata {
+        grid-area: 1 / 4 / 2 / 5;
+        width: 50%;
+        display:flex;
+        justify-self: center;
+    }
+
+    .davi {
+        grid-area: 2 / 4 / 3 / 5;
+    }
+
+    form {
+        padding: 10px;
+        font-size: 1.5rem;
+    }
+
+    #name,
+    #cel,
+    #ad {
+        box-shadow: 0 0 3px 1px #664300;
+        background-color: transparent;
+        border: none;
+        padding: 4px 40px;
+        font-size: 1.5rem;
+        border-radius: 5px;
+    }
+
+    #coment {
+        box-shadow: 0 0 3px 1px #664300;
+        background-color: transparent;
+        border: none;
+        font-size: 1.5rem;
+        padding: 20px 20px;
+        width: 80%;
+    }
+    .conboton{
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+    }
+    .confirmar {
+        background-color: #664300;
+        box-shadow: 0 0 0 3px #B28405;
+        border: none;
+        border-radius: 10px;
+        font-size: 1.4rem;
+        padding: 4px 15px;
+    }
+
+    .confirmar:hover {
+        color: #fff;
+        cursor: pointer;
+    }
+
+}
+
+//Mobile horizontal
+@media (min-width: 399px) and (max-width: 760px) and (orientation: landscape) {
+    .msg {
+        text-align: center;
+        padding: 20px;
+        color: #000;
+        font-size: 1.5rem;
+    }
+
+    .type {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-template-columns: repeat(auto-fit minmax(80px, 1fr));
+        grid-template-columns: repeat(auto-fill minmax(80px, 1fr));
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(auto-fill minmax(60px, 1fr));
+        grid-template-rows: repeat(auto-fit minmax(60px, 1fr));
+        padding: 15px;
+        column-gap: 20px;
+        row-gap: 5px;
+        font-size: 1.2rem;
+    }
+
+    .efectivo {
+        grid-area: 1 / 1 / 2 / 2;
+        width: 70%;
+        display:flex;
+        justify-self: center;
+
+    }
+
+    .efec {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .nequi {
+        grid-area: 1 / 2 / 2 / 3;
+        width: 70%;
+        display:flex;
+        justify-self: center;
+    }
+
+    .neq {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+
+    .tarjetas {
+        grid-area: 1 / 3 / 2 / 4;
+        width: 70%;
+        display:flex;
+        justify-self: center;
+    }
+
+    .tarj {
+        grid-area: 2 / 3 / 3 / 4;
+    }
+
+    .daviplata {
+        grid-area: 1 / 4 / 2 / 5;
+        width: 50%;
+        display:flex;
+        justify-self: center;
+    }
+
+    .davi {
+        grid-area: 2 / 4 / 3 / 5;
+        padding-left: 10px;
+    }
+
+    form {
+        padding: 20px;
+        font-size: 1.5rem;
+    }
+
+    #name,
+    #cel,
+    #ad {
+        box-shadow: 0 0 3px 1px #664300;
+        background-color: transparent;
+        border: none;
+        padding: 4px 50px;
+        font-size: 1.5rem;
+        border-radius: 5px;
+    }
+
+    #coment {
+        box-shadow: 0 0 3px 1px #664300;
+        background-color: transparent;
+        border: none;
+        font-size: 1.5rem;
+        padding: 20px 20px;
+        width: 80%;
+    }
+    .conboton{
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+    }
+    .confirmar {
+        background-color: #664300;
+        box-shadow: 0 0 0 3px #B28405;
+        border: none;
+        border-radius: 10px;
+        font-size: 1.4rem;
+        padding: 4px 15px;
+    }
+
+    .confirmar:hover {
+        color: #fff;
+        cursor: pointer;
+    }
+}
+//Tablet
+@media (min-width:481px) and (max-width:768px) and (orientation:portrait){
+    .msg {
+        text-align: center;
+        padding: 20px;
+        color: #000;
+        font-size: 1.9rem;
+    }
+
+    .type {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-template-columns: repeat(auto-fit minmax(80px, 1fr));
+        grid-template-columns: repeat(auto-fill minmax(80px, 1fr));
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(auto-fill minmax(60px, 1fr));
+        grid-template-rows: repeat(auto-fit minmax(60px, 1fr));
+        padding: 20px 40px;
+        column-gap: 20px;
+        row-gap: 5px;
+        font-size: 1.5rem;
+    }
+
+    .efectivo {
+        grid-area: 1 / 1 / 2 / 2;
+        width: 70%;
+        display:flex;
+        justify-self: center;
+
+    }
+
+    .efec {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .nequi {
+        grid-area: 1 / 2 / 2 / 3;
+        width: 70%;
+        display:flex;
+        justify-self: center;
+    }
+
+    .neq {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+
+    .tarjetas {
+        grid-area: 1 / 3 / 2 / 4;
+        width: 70%;
+        display:flex;
+        justify-self: center;
+    }
+
+    .tarj {
+        grid-area: 2 / 3 / 3 / 4;
+    }
+
+    .daviplata {
+        grid-area: 1 / 4 / 2 / 5;
+        width: 60%;
+        display:flex;
+        justify-self: center;
+    }
+
+    .davi {
+        grid-area: 2 / 4 / 3 / 5;
+    }
+
+    form {
+        padding: 0 140px;
+        font-size: 1.8rem;
+    }
+
+    #name,
+    #cel,
+    #ad {
+        box-shadow: 0 0 3px 1px #664300;
+        background-color: transparent;
+        border: none;
+        padding: 4px 50px;
+        font-size: 1.8rem;
+        border-radius: 5px;
+    }
+
+    #coment {
+        box-shadow: 0 0 3px 1px #664300;
+        background-color: transparent;
+        border: none;
+        font-size: 1.8rem;
+        padding: 20px 20px;
+        width: 80%;
+    }
+    .conboton{
+        display: flex;
+        justify-content: center;
+        padding: 40px 0;
+    }
+    .confirmar {
+        background-color: #664300;
+        box-shadow: 0 0 0 3px #B28405;
+        border: none;
+        border-radius: 10px;
+        font-size: 1.8rem;
+        padding: 4px 15px;
+    }
+
+    .confirmar:hover {
+        color: #fff;
+        cursor: pointer;
+    }
+}
+//Tablet Horizontal
+@media (min-width:761px) and (max-width:1024px) and (orientation:landscape){
+    .msg {
+        text-align: center;
+        padding: 20px;
+        color: #000;
+        font-size: 1.9rem;
+    }
+
+    .type {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-template-columns: repeat(auto-fit minmax(80px, 1fr));
+        grid-template-columns: repeat(auto-fill minmax(80px, 1fr));
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(auto-fill minmax(60px, 1fr));
+        grid-template-rows: repeat(auto-fit minmax(60px, 1fr));
+        padding: 20px 40px;
+        column-gap: 20px;
+        row-gap: 5px;
+        font-size: 1.5rem;
+    }
+
+    .efectivo {
+        grid-area: 1 / 1 / 2 / 2;
+        width: 70%;
+        display:flex;
+        justify-self: center;
+
+    }
+
+    .efec {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .nequi {
+        grid-area: 1 / 2 / 2 / 3;
+        width: 70%;
+        display:flex;
+        justify-self: center;
+    }
+
+    .neq {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+
+    .tarjetas {
+        grid-area: 1 / 3 / 2 / 4;
+        width: 70%;
+        display:flex;
+        justify-self: center;
+    }
+
+    .tarj {
+        grid-area: 2 / 3 / 3 / 4;
+    }
+
+    .daviplata {
+        grid-area: 1 / 4 / 2 / 5;
+        width: 60%;
+        display:flex;
+        justify-self: center;
+    }
+
+    .davi {
+        grid-area: 2 / 4 / 3 / 5;
+    }
+
+    form {
+        padding: 0 160px;
+        font-size: 1.8rem;
+    }
+
+    #name,
+    #cel,
+    #ad {
+        box-shadow: 0 0 3px 1px #664300;
+        background-color: transparent;
+        border: none;
+        padding: 4px 90px;
+        font-size: 1.8rem;
+        border-radius: 5px;
+    }
+
+    #coment {
+        box-shadow: 0 0 3px 1px #664300;
+        background-color: transparent;
+        border: none;
+        font-size: 1.8rem;
+        padding: 20px 20px;
+        width: 80%;
+    }
+    .conboton{
+        display: flex;
+        justify-content: center;
+        padding: 40px 0;
+    }
+    .confirmar {
+        background-color: #664300;
+        box-shadow: 0 0 0 3px #B28405;
+        border: none;
+        border-radius: 10px;
+        font-size: 1.8rem;
+        padding: 4px 15px;
+    }
+
+    .confirmar:hover {
+        color: #fff;
+        cursor: pointer;
+    }
+
+}

@@ -1,0 +1,171 @@
+@media (min-width:1025px) {
+    .ini {
+        background-image: url("./Img/fondo.jpg");
+        color: #000;
+        margin: 0;
+        font-size: 2.6rem;
+    }
+
+    h1 {
+        padding-top: 80px;
+        text-align: center;
+    }
+
+    .all {
+        padding: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    .sho{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        font-size: 2.3rem;
+        padding: 50px;
+    }
+    .del{
+        cursor: pointer;
+        background: transparent;
+        border: none;
+        width: 50px;
+    }
+
+    .del figure {
+        width: 100%;
+    }
+
+    .del figure img{
+        width: 100%;
+    }
+}
+
+//Mobile
+@media (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
+    .ini {
+        background-image: url("./Img/fondo.jpg");
+        color: #000;
+        margin: 0;
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        padding-top: 80px;
+        text-align: center;
+    }
+
+    .all {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .eli {
+        width: 26px;
+    }
+
+    .sho{
+        padding: 10px;
+        font-size: 1.3rem
+    }
+}
+
+//Mobile horizontal
+@media (min-width: 399px) and (max-width: 760px) and (orientation: landscape) {
+    .ini {
+        background-image: url("./Img/fondo.jpg");
+        color: #000;
+        margin: 0;
+        font-size: 1.6rem;
+    }
+
+    h1 {
+        padding-top: 80px;
+        text-align: center;
+    }
+
+    .all {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .eli {
+        width: 30px;
+    }
+
+    .del {
+        width:auto;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .sho{
+        padding: 10px;
+        font-size: 1.3rem;
+    }
+}
+
+//Tablet
+@media (min-width:481px) and (max-width:768px) and (orientation:portrait) {
+    .ini {
+        background-image: url("./Img/fondo.jpg");
+        color: #000;
+        margin: 0;
+        font-size: 1.9rem;
+    }
+
+    h1 {
+        padding-top: 80px;
+        text-align: center;
+    }
+
+    .all {
+        padding: 25px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .eli {
+        width: 35px;
+    }
+
+    .del {
+        width:auto;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .sho{
+        padding: 15px;
+        font-size: 1.6rem;
+    }
+}
+//Tablet Horizontal
+@media (min-width:761px) and (max-width:1024px) and (orientation:landscape) {
+    .ini {
+        background-image: url("./Img/fondo.jpg");
+        color: #000;
+        margin: 0;
+        font-size: 1.9rem;
+    }
+    h1 {
+        padding-top: 80px;
+        text-align: center;
+    }
+    .all {
+        padding: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    .eli {
+        width: 35px;
+    }
+    .del {
+        width:auto;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .sho{
+        padding: 40px;
+    }
+}
