@@ -2,6 +2,7 @@ import Pop from "./Pop";
 import { useState } from "react";
 
 const PopUps = () =>{
+    //Implemented state to pop up
     const [estado1, changeEstado1] = useState(true);
     return (
         <Pop estado = {estado1} changeEstado = {changeEstado1}>

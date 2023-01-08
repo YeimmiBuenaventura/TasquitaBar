@@ -1,48 +1,297 @@
-.popup{
-    position: fixed;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    background-color: #ffffff40;
+@media (min-width:1025px) {
+    .popup {
+        position: fixed;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff40;
+    }
+    .ap {
+        position: fixed;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff40;
+        display: none;
+    }
+    .pop {
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+        grid-template-rows: repeat(autofit, minmax(360px 1fr));
+        grid-template-rows: repeat(autofill, minmax(360px 1fr));
+        background-image: url('./Img/fondo.jpg');
+        width: 60%;
+        height: 90%;
+        align-self: center;
+        justify-self: center;
+        margin: auto;
+        position: relative;
+    }
+    .logo{
+        grid-area: 1 / 1 / 2 / 2;
+        width:65%;
+        display: flex;
+        justify-self: center;
+        padding: 20px 0px;
+    }
+    .msj {
+        grid-area: 2 / 1 / 3 / 2;
+        padding: 0  10%;
+        font-size: 1.8rem;
+        text-align: center;
+        margin-top: -40px;
+    }
+    #ok {
+        grid-area: 3 / 1 / 4 / 2;
+        background-color: #664300;
+        box-shadow: 0 0 0 2px #B28405;
+        width: 10%;
+        font-size: 1.8rem;
+        border: none;
+        justify-self: center;
+        margin: auto;
+        border-radius: 10px;
+        color: #fff;
+        cursor: pointer;
+        position: absolute;
+    }
 }
-.ap{
-    position: fixed;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    background-color: #ffffff40;
-    display: none;
+//Mobile
+@media (min-width: 320px) and (max-width: 480px) and (orientation: portrait){
+    .popup {
+        position: fixed;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff40;
+    }
+    .ap {
+        position: fixed;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff40;
+        display: none;
+    }
+    .pop {
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+        grid-template-rows: repeat(auto-fit, minmax(360px 1fr));
+        grid-template-rows: repeat(auto-fill, minmax(360px 1fr));
+        background-image: url('./Img/fondo.jpg');
+        width: 85%;
+        height: 90%;
+        align-self: center;
+        justify-self: center;
+        margin: auto;
+        position: relative;
+    }
+    .logo{
+        grid-area: 1 / 1 / 2 / 2;
+        width:90%;
+        display: flex;
+        justify-self: center;
+        padding: 10px 0px;
+    }
+    .msj {
+        grid-area: 2 / 1 / 3 / 2;
+        padding: 0 6%;
+        margin-top: -30px;;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    #ok {
+        grid-area: 3 / 1 / 4 / 2;
+        background-color: #664300;
+        box-shadow: 0 0 0 2px #B28405;
+        width: 25%;
+        font-size: 1.3rem;
+        border: none;
+        justify-self: center;
+        margin: auto;
+        border-radius: 10px;
+        color: #fff;
+        cursor: pointer;
+        position: absolute;
+    }
 }
-.pop{
-    display: grid;
-    grid-template-rows: repeat(3, auto);
-    grid-template-rows: repeat(autofit, minmax(360px 1fr));
-    grid-template-rows: repeat(autofill, minmax(360px 1fr));
-    background-image: url('./Img/fondo.jpg');
-    width: 60%;
-    height: 80%;
-    align-self: center;
-    justify-self: center;
-    margin: auto;
-    position: relative;
+//Mobile horizontal
+@media (min-width: 399px) and (max-width: 760px) and (orientation: landscape){
+    .popup {
+        position: fixed;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff40;
+    }
+    .ap {
+        position: fixed;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff40;
+        display: none;
+    }
+    .pop {
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+        grid-template-rows: repeat(autofit, minmax(360px 1fr));
+        grid-template-rows: repeat(autofill, minmax(360px 1fr));
+        background-image: url('./Img/fondo.jpg');
+        width: 85%;
+        height: 98%;
+        align-self: center;
+        justify-self: center;
+        margin: auto;
+        position: relative;
+    }
+    .logo{
+        grid-area: 1 / 1 / 2 / 2;
+        width:60%;
+        display: flex;
+        justify-self: center;
+        padding: 10px 0px;
+    }
+    .msj {
+        grid-area: 2 / 1 / 3 / 2;
+        padding: 0 2%;
+        font-size: 1.2rem;
+        text-align: center;
+        margin-top: -35px;
+    }
+    #ok {
+        grid-area: 3 / 1 / 4 / 2;
+        background-color: #664300;
+        box-shadow: 0 0 0 2px #B28405;
+        width: 25%;
+        font-size: 1.2rem;
+        border: none;
+        justify-self: center;
+        margin: auto;
+        border-radius: 10px;
+        color: #fff;
+        cursor: pointer;
+        position: absolute;
+    }
+
 }
-.msj{
-    grid-area: 2 / 1 / 3 / 2;
-    padding: 10%;
-    font-size: 1.5rem;
-    text-align: center;
+//Tablet
+@media (min-width:481px) and (max-width:768px) and (orientation:portrait){
+    .popup {
+        position: fixed;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff40;
+    }
+    .ap {
+        position: fixed;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff40;
+        display: none;
+    }
+    .pop {
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+        grid-template-rows: repeat(autofit, minmax(360px 1fr));
+        grid-template-rows: repeat(autofill, minmax(360px 1fr));
+        background-image: url('./Img/fondo.jpg');
+        width: 80%;
+        height: 70%;
+        align-self: center;
+        justify-self: center;
+        margin: auto;
+        position: relative;
+    }
+    .msj {
+        grid-area: 2 / 1 / 3 / 2;
+        padding: 0 8%;
+        font-size: 2.1rem;
+        text-align: center;
+        margin-top: -50px;
+    }
+    .logo{
+        grid-area: 1 / 1 / 2 / 2;
+        width:85%;
+        display: flex;
+        justify-self: center;
+        padding: 20px 0px;
+    }
+    #ok {
+        grid-area: 3 / 1 / 4 / 2;
+        background-color: #664300;
+        box-shadow: 0 0 0 2px #B28405;
+        width: 25%;
+        font-size: 1.8rem;
+        border: none;
+        justify-self: center;
+        margin: auto;
+        border-radius: 10px;
+        color: #fff;
+        cursor: pointer;
+        position: absolute;
+    }
+
 }
-#ok{
-    grid-area: 3 / 1 / 4 / 2;
-    background-color: #664300;
-    box-shadow: 0 0 0 2px #B28405;
-    width: 10%;
-    font-size: 1.5rem;
-    border: none;
-    justify-self: center;
-    margin: auto;
-    border-radius: 10px;
-    color: #fff;
-    cursor: pointer;
-    position: absolute;
+//Tablet Horizontal
+@media (min-width:761px) and (max-width:1024px) and (orientation:landscape){
+    .popup {
+        position: fixed;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff40;
+    }
+    .ap {
+        position: fixed;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff40;
+        display: none;
+    }
+    .pop {
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+        grid-template-rows: repeat(autofit, minmax(360px 1fr));
+        grid-template-rows: repeat(autofill, minmax(360px 1fr));
+        background-image: url('./Img/fondo.jpg');
+        width: 80%;
+        height: 80%;
+        align-self: center;
+        justify-self: center;
+        margin: auto;
+        position: relative;
+    }
+    .msj {
+        grid-area: 2 / 1 / 3 / 2;
+        padding: 0 8%;
+        font-size: 2.1rem;
+        text-align: center;
+        margin-top: -50px;
+    }
+    .logo{
+        grid-area: 1 / 1 / 2 / 2;
+        width:60%;
+        display: flex;
+        justify-self: center;
+        padding: 20px 0px;
+    }
+    #ok {
+        grid-area: 3 / 1 / 4 / 2;
+        background-color: #664300;
+        box-shadow: 0 0 0 2px #B28405;
+        width: 25%;
+        font-size: 1.8rem;
+        border: none;
+        justify-self: center;
+        margin: auto;
+        border-radius: 10px;
+        color: #fff;
+        cursor: pointer;
+        position: absolute;
+    }
+
 }

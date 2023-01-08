@@ -1,3 +1,4 @@
+//Data to product
 export const info = [
   {
     id: 1,

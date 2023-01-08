@@ -6,12 +6,15 @@ import { info } from './Store/data';
 import { add } from './Store/carSlice';
 
 export const Beers = () => {
+  //Filter to get products
   const beer = info.filter(item => item.type === 'beer');
+  // Dispatch is used to send actions into our store
   const Dispatch = useDispatch();
+  // Allows you to extract data from the store
   const products = useSelector((state) => state.cart.products);
 
   const [productsLicors, setProductsLicors] = useState(beer);
-
+  //Function to change the quantity the product to input and update the list
   const cambiarSolicitadas = (product) => (e) => {
     const newProductsLicors = productsLicors.map((item) => {
       if (product.id === item.id) {
@@ -23,6 +26,7 @@ export const Beers = () => {
   };
   return (
     <section className="products">
+      {/*Implemented card to products*/}
       {productsLicors.map((item) => (
           <article key={item.id} className="cartProduct">
             <img

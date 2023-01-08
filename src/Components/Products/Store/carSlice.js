@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-
+//Implemented initial state to store
 const initialState = {
     products : []
 }

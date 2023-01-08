@@ -6,12 +6,14 @@ import { add } from './Store/carSlice';
 import './Styles.scss';
 
 export const Varios = () => {
+  //Filter to get products
   const varius = info.filter(item => item.type === 'varius');
   const Dispatch = useDispatch();
+  //Allows you to extract data from the store
   const products = useSelector((state) => state.cart.products);
 
   const [productsLicors, setProductsLicors] = useState(varius);
-
+  //Function to change the quantity the product to input and update the list
   const cambiarSolicitadas = (product) => (e) => {
     const newProductsLicors = productsLicors.map((item) => {
       if (product.id === item.id) {
@@ -23,6 +25,7 @@ export const Varios = () => {
   };
   return (
     <section className="products">
+      {/*Implemented card to products*/}
       {productsLicors.map((item) => (
         <article key={item.id} className="cartProduct">
           <img

@@ -6,16 +6,19 @@ import { Shopping } from '../Products/Store/Shopping';
 import './List.scss';
 
 export const List = () => {
+
+  //Implemented state to list
   const productos = useSelector((state) => state.cart.products);
-
+  //Subtotal
   const totalConSolicitadas = (product) => product.valorUnidad * product.Solicitadas;
-
+  //Total
   const total = productos.reduce((acumulador, product) => acumulador + totalConSolicitadas(product), 0)
 
   return (
     <section>
       <section className="ini">
         <h1>TU PEDIDO</h1>
+        {/*Implemented component*/}
         <Shopping />
         <section className="all">
           <label>
@@ -25,6 +28,7 @@ export const List = () => {
             {total}
           </div>
         </section>
+        {/*Implemented component*/}
         <Buy productos={productos} total={total} totalConSolicitadas={totalConSolicitadas} />
       </section>
       <Footer />

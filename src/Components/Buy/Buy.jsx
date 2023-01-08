@@ -19,7 +19,7 @@ export default function Buys({
 
   const sendWhatsapp = () => {
     const listProducts = productos.map(item => `${item.nameProduct} - ${item.Solicitadas} - valor: $ ${item.valorUnidad} - subtotal: $ ${totalConSolicitadas(item)}`)
-    let numero = 573052064524;
+    let numero = 573008014429;
     let url = `
       https://wa.me/${numero}?text=Hola%20mi%20nombre%20es%20${name}, Mi Dirección es:%20${address}, número de contacto:%20${cel}, Medio de pago:%20${medio}, Comentarios adicionales:%20${com}, El pedido que requiero es:%0A
       ${listProducts.join('%0A')}

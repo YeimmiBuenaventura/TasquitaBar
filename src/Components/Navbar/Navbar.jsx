@@ -6,10 +6,13 @@ import {Varios} from "../Products/ProductsVarius";
 import "./Navbar.scss"
 
 function Nav (){
+
+    //State to botton
     const [beer, closeBeer] = useState (false);
     const [liqueur, closeLiqueur] = useState (false);
     const [varius, closeVarius] = useState (false);
 
+    //Functions to close and open section products
     const handleBeerClick = () =>{
         closeBeer(true);
         closeLiqueur(false);
