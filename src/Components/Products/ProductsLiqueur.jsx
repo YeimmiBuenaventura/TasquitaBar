@@ -55,7 +55,7 @@ export const Liqueurs = () => {
                 {item.nameProduct}
                 <br />
                 {item.cantidad}
-                <br />$ {item.valorUnidad} Und.
+                <br />$ {item.valorUnidad}.00 Und.
               </p>
             </div>
           </article>

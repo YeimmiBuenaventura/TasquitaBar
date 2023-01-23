@@ -2,16 +2,16 @@ figure img{
     display: block;
     margin: 0;
 }
-/*SECTION LIQUEUR*/
+
 @media (min-width:1025px) {
     .products {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-columns: repeat(autofill, minmax(60px, 1fr));
-        grid-template-columns: repeat(autofit, minmax(60px, 1fr));
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-rows: repeat(autofill, minmax(80px, 1fr));
-        grid-template-rows: repeat(autofit, minmax(80px, 1fr));
+        grid-template-columns: repeat(autofill minmax(60px 1fr));
+        grid-template-columns: repeat(autofit minmax(60px 1fr));
+        grid-template-rows: repeat(3 1fr);
+        grid-template-rows: repeat(autofill minmax(80px 1fr));
+        grid-template-rows: repeat(autofit minmax(80px 1fr));
         padding: 0 40px;
         row-gap: 20px;
         column-gap: 20px;
@@ -19,12 +19,12 @@ figure img{
 
     .cartProduct {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-columns: repeat(autofill, minmax(60px 1fr));
-        grid-template-columns: repeat(autofit, minmax(60px 1fr));
-        grid-template-rows: repeat(3, auto);
-        grid-template-rows: repeat(autofill, minmax(60px 1fr));
-        grid-template-rows: repeat(autofill, minmax(60px 1fr));
+        grid-template-columns: repeat(2 1fr);
+        grid-template-columns: repeat(autofill minmax(60px 1fr));
+        grid-template-columns: repeat(autofit minmax(60px 1fr));
+        grid-template-rows: repeat(3 auto);
+        grid-template-rows: repeat(autofill minmax(60px 1fr));
+        grid-template-rows: repeat(autofill minmax(60px 1fr));
         background-color: #B28405;
         border-radius: 20px;
         box-shadow: 0 0 0 2px #EFB810;
@@ -94,16 +94,16 @@ figure img{
     }
 }
 
-//Ipads-Tablets
+//Tablets
 @media (min-width:481px) and (max-width:768px) and (orientation:portrait){
     .products {
         display: grid;
-        grid-template-columns: repeat(3,auto);
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        grid-template-rows: repeat(auto, 1fr);
-        grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
-        grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(auto-fill minmax(200px 1fr));
+        grid-template-columns: repeat(auto-fit minmax(200px 1fr));
+        grid-template-rows: repeat(auto 1fr);
+        grid-template-rows: repeat(auto-fill minmax(200px 1fr));
+        grid-template-rows: repeat(auto-fit minmax(200px 1fr));
         margin-left: 20px;
         margin-right: 20px;
         row-gap: 20px;
@@ -113,12 +113,12 @@ figure img{
 
     .cartProduct {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-columns: repeat(auto-fill, minmax(100px 1fr));
-        grid-template-columns: repeat(auto-fit, minmax(100px 1fr));
-        grid-template-rows: repeat(3, auto);
-        grid-template-rows: repeat(auto-fill, minmax(70px 1fr));
-        grid-template-rows: repeat(auto-fill, minmax(70px 1fr));
+        grid-template-columns: repeat(2 1fr);
+        grid-template-columns: repeat(auto-fill minmax(100px 1fr));
+        grid-template-columns: repeat(auto-fit minmax(100px 1fr));
+        grid-template-rows: repeat(3 auto);
+        grid-template-rows: repeat(auto-fill minmax(70px 1fr));
+        grid-template-rows: repeat(auto-fill minmax(70px 1fr));
         background-color: #B28405;
         border-radius: 10px;
         box-shadow: 0 0 0 2px #EFB810;
@@ -196,12 +196,12 @@ figure img{
 @media (min-width:761px) and (max-width:1024px) and (orientation:landscape) {
     .products {
         display: grid;
-        grid-template-columns: repeat(3,auto);
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        grid-template-rows: repeat(auto, 1fr);
-        grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
-        grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-columns: repeat(3, auto);
+        grid-template-columns: repeat(auto-fill minmax(200px 1fr));
+        grid-template-columns: repeat(auto-fit minmax(200px 1fr));
+        grid-template-rows: repeat(auto 1fr);
+        grid-template-rows: repeat(auto-fill minmax(200px 1fr));
+        grid-template-rows: repeat(auto-fit minmax(200px 1fr));
         margin-left: 20px;
         margin-right: 20px;
         row-gap: 20px;
@@ -211,12 +211,12 @@ figure img{
 
     .cartProduct {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-columns: repeat(auto-fill, minmax(100px 1fr));
-        grid-template-columns: repeat(auto-fit, minmax(100px 1fr));
-        grid-template-rows: repeat(3, auto);
-        grid-template-rows: repeat(auto-fill, minmax(70px 1fr));
-        grid-template-rows: repeat(auto-fill, minmax(70px 1fr));
+        grid-template-columns: repeat(2 1fr);
+        grid-template-columns: repeat(auto-fill minmax(100px 1fr));
+        grid-template-columns: repeat(auto-fit minmax(100px 1fr));
+        grid-template-rows: repeat(3 auto);
+        grid-template-rows: repeat(auto-fill minmax(70px 1fr));
+        grid-template-rows: repeat(auto-fill minmax(70px 1fr));
         background-color: #B28405;
         border-radius: 10px;
         box-shadow: 0 0 0 2px #EFB810;
@@ -295,11 +295,11 @@ figure img{
     .products {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-rows: repeat(auto-fill, minmax(120px, 1fr));
-        grid-template-rows: repeat(auto-fit, minmax(120px, 1fr));
+        grid-template-columns: repeat(auto-fill minmax(240px 1fr));
+        grid-template-columns: repeat(auto-fit minmax(240px 1fr));
+        grid-template-rows: repeat(3 1fr);
+        grid-template-rows: repeat(auto-fill, minmax(120px 1fr));
+        grid-template-rows: repeat(auto-fit, minmax(120px 1fr));
         margin-left: 20px;
         margin-right: 20px;
         row-gap: 20px;
@@ -309,12 +309,12 @@ figure img{
 
     .cartProduct {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-columns: repeat(autofill, minmax(60px 1fr));
-        grid-template-columns: repeat(autofit, minmax(60px 1fr));
-        grid-template-rows: repeat(3, auto);
-        grid-template-rows: repeat(autofill, minmax(60px 1fr));
-        grid-template-rows: repeat(autofill, minmax(60px 1fr));
+        grid-template-columns: repeat(2 1fr);
+        grid-template-columns: repeat(autofill minmax(60px 1fr));
+        grid-template-columns: repeat(autofit minmax(60px 1fr));
+        grid-template-rows: repeat(3 auto);
+        grid-template-rows: repeat(autofill minmax(60px 1fr));
+        grid-template-rows: repeat(autofill minmax(60px 1fr));
         background-color: #B28405;
         border-radius: 20px;
         box-shadow: 0 0 0 2px #EFB810;
@@ -388,12 +388,12 @@ figure img{
 @media (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
     .products {
         display: grid;
-        grid-template-columns: repeat(3,auto);
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        grid-template-rows: repeat(auto, 1fr);
-        grid-template-rows: repeat(auto-fill, minmax(70px, 1fr));
-        grid-template-rows: repeat(auto-fit, minmax(70px, 1fr));
+        grid-template-columns: repeat(1, auto);
+        grid-template-columns: repeat(auto-fill, minmax(200px 1fr));
+        grid-template-columns: repeat(auto-fit minmax(200px 1fr));
+        grid-template-rows: repeat(auto 1fr);
+        grid-template-rows: repeat(auto-fill minmax(70px 1fr));
+        grid-template-rows: repeat(auto-fit minmax(70px 1fr));
         margin-left: 10px;
         margin-right: 10px;
         row-gap: 20px;
@@ -403,12 +403,12 @@ figure img{
 
     .cartProduct {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-columns: repeat(auto-fill, minmax(40px 1fr));
-        grid-template-columns: repeat(auto-fit, minmax(40px 1fr));
-        grid-template-rows: repeat(3, auto);
-        grid-template-rows: repeat(auto-fill, minmax(70px 1fr));
-        grid-template-rows: repeat(auto-fill, minmax(70px 1fr));
+        grid-template-columns: repeat(2 1fr);
+        grid-template-columns: repeat(auto-fill minmax(40px 1fr));
+        grid-template-columns: repeat(auto-fit minmax(40px 1fr));
+        grid-template-rows: repeat(3 auto);
+        grid-template-rows: repeat(auto-fill minmax(70px 1fr));
+        grid-template-rows: repeat(auto-fill minmax(70px 1fr));
         background-color: #B28405;
         border-radius: 6px;
         box-shadow: 0 0 0 4px #EFB810;
@@ -483,12 +483,12 @@ figure img{
 @media (min-width: 399px) and (max-width: 760px) and (orientation: landscape){
     .products {
         display: grid;
-        grid-template-columns: repeat(3,auto);
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        grid-template-rows: repeat(auto, 1fr);
-        grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
-        grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-columns: repeat(1, auto);
+        grid-template-columns: repeat(auto-fill minmax(200px 1fr));
+        grid-template-columns: repeat(auto-fit minmax(200px 1fr));
+        grid-template-rows: repeat(auto 1fr);
+        grid-template-rows: repeat(auto-fill, minmax(200px 1fr));
+        grid-template-rows: repeat(auto-fit, minmax(200px 1fr));
         margin-left: 20px;
         margin-right: 20px;
         row-gap: 20px;
@@ -498,12 +498,12 @@ figure img{
 
     .cartProduct {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-columns: repeat(auto-fill, minmax(100px 1fr));
-        grid-template-columns: repeat(auto-fit, minmax(100px 1fr));
-        grid-template-rows: repeat(3, auto);
-        grid-template-rows: repeat(auto-fill, minmax(70px 1fr));
-        grid-template-rows: repeat(auto-fill, minmax(70px 1fr));
+        grid-template-columns: repeat(2 1fr);
+        grid-template-columns: repeat(auto-fill minmax(100px 1fr));
+        grid-template-columns: repeat(auto-fit minmax(100px 1fr));
+        grid-template-rows: repeat(3 auto);
+        grid-template-rows: repeat(auto-fill minmax(70px 1fr));
+        grid-template-rows: repeat(auto-fill minmax(70px 1fr));
         background-color: #B28405;
         border-radius: 10px;
         box-shadow: 0 0 0 4px #EFB810;

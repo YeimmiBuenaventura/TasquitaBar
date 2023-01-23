@@ -58,6 +58,7 @@ export default function Buys({
       <form>
         <label htmlFor="name">Nombre </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <input
+          required
           type="text"
           id="name"
           value={name}
@@ -67,6 +68,7 @@ export default function Buys({
         <br />
         <label htmlFor="cel">Contacto </label> &nbsp;&nbsp;&nbsp;
         <input
+          required
           type="text"
           id="cel"
           value={cel}
@@ -76,6 +78,7 @@ export default function Buys({
         <br />
         <label htmlFor="address">Dirección </label> &nbsp;&nbsp;
         <input
+          required
           type="text"
           id="ad"
           value={address}
@@ -87,6 +90,7 @@ export default function Buys({
         <br />
         <br />
         <input
+          required
           type="radio"
           id="efectivo"
           value="efectivo"

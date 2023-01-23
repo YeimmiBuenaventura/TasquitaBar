@@ -12,7 +12,6 @@ export const Beers = () => {
   const Dispatch = useDispatch();
   // Allows you to extract data from the store
   const products = useSelector((state) => state.cart.products);
-
   const [productsLicors, setProductsLicors] = useState(beer);
   //Function to change the quantity the product to input and update the list
   const cambiarSolicitadas = (product) => (e) => {
@@ -54,7 +53,7 @@ export const Beers = () => {
                 {item.nameProduct}
                 <br />
                 {item.cantidad}
-                <br />$ {item.valorUnidad} Und.
+                <br />$ {item.valorUnidad}.00 Und.
               </p>
             </div>
           </article>
